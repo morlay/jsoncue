@@ -1,0 +1,29 @@
+{
+  "name": "@morlay/jsoncue",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "bun": {
+        "import": "./src/index.ts"
+      }
+    },
+    "./codemirror": {
+      "bun": {
+        "import": "./src/codemirror.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@lezer/common": "^1.2.1",
+    "@lezer/highlight": "^1.2.0",
+    "@lezer/lr": "^1.4.0",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/state": "^6.4.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@lezer/generator": "^1.7.0",
+    "typescript": "^5.4.5"
+  }
+}
